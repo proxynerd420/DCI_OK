@@ -273,23 +273,7 @@ h4 {
     width: 3vw;
 }
 
-footer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: radial-gradient(ellipse at center, #3f3f3f 0%, #000000 100%);
-    padding: 20px;
-    border-top: 2px solid goldenrod;
-}
 
-footer img {
-    width: 15vw;
-}
-
-footer h4 {
-    color: goldenrod;
-}
 
 .kreaturen>div>img.foil-effect {
     width: 12vw;
@@ -415,10 +399,29 @@ footer {
     /* Stile für den Stummschalt-Button */
 }
 
+
 .footer-container {
     display: flex;
     align-items: center;
     gap: 10px; /* Füge Abstand zwischen den Elementen hinzu, falls gewünscht */
+} 
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #3f3f3f 0%, #000000 100%);
+    padding: 20px;
+    border-top: 2px solid goldenrod;
+}
+
+footer img {
+    width: 15vw;
+}
+
+footer h4 {
+    color: goldenrod;
 }
 
   
