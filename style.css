@@ -184,7 +184,9 @@ h4 {
 }
 
 .lands>div>img:hover {
+    z-index: 1;
     transform: scale(1.35);
+    position: relative; /* oder position: absolute; */
 }
 
 .kreaturen {
@@ -205,7 +207,9 @@ h4 {
 }
 
 .kreaturen>div>img:hover {
+    z-index: 1;
     transform: scale(1.35);
+    position: relative; /* oder position: absolute; */
 }
 
 .Zauber {
@@ -226,7 +230,9 @@ h4 {
 }
 
 .Zauber>div>img:hover {
+    z-index: 1;
     transform: scale(1.35);
+    position: relative; /* oder position: absolute; */
 }
 
 .Artefakte {
@@ -247,7 +253,9 @@ h4 {
 }
 
 .Artefakte>div>img:hover {
+    z-index: 1;
     transform: scale(1.35);
+    position: relative; /* oder position: absolute; */
 }
 
 .Erweiterungen>ul {
