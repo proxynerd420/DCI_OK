@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Dein gesamter JavaScript-Code hier
 
     // Funktion zur Änderung des Mana-Symbols
     function changeManaSymbol() {

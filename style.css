@@ -389,13 +389,6 @@ h4 {
 
 /* ... (deine vorhandenen CSS-Regeln) ... */
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
 #muteButton {
     align-self: center;
     /* Stile für den Stummschalt-Button */
@@ -409,6 +402,10 @@ footer {
 } 
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
