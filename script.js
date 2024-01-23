@@ -55,52 +55,52 @@ function playSound(soundFile) {
 
 // Füge die Funktionen dem Hover-Ereignis hinzu
 document.getElementById('galli').addEventListener('mouseenter', function () {
-    playSound('galli.mp3');
+    playSound('mp3/galli.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf1').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf3').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf2').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf4').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf5').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf6').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sumpf7').addEventListener('mouseenter', function () {
-    playSound('sumpf.mp3');
+    playSound('mp3/sumpf.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('nazgul').addEventListener('mouseenter', function () {
-    playSound('nazgul.mp3');
+    playSound('mp3/nazgul.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
 document.getElementById('sheo').addEventListener('mouseenter', function () {
-    playSound('sheo.mp3');
+    playSound('mp3/sheo.mp3');
     // Füge hier weitere Aktionen hinzu, falls benötigt
 });
 
@@ -131,7 +131,7 @@ document.getElementById('sheo').addEventListener('mouseenter', function () {
         console.log('Easter Egg Benachrichtigung hinzugefügt');
 
         // Audio-Element abspielen
-        const fanfareAudio = new Audio('fanfare.mp3');
+        const fanfareAudio = new Audio('mp3/fanfare.mp3');
         fanfareAudio.play();
         console.log('Fanfare abgespielt');
 
