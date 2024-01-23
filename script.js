@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const manaSymbolElement = document.getElementById("manaSymbol");
         const randomIndex = Math.floor(Math.random() * manaSymbols.length);
         const newManaSymbol = manaSymbols[randomIndex];
+        // Füge diese Zeilen in die Funktion changeManaSymbol ein
+        const faviconElement = document.getElementById("favicon");
+        const newFavicon = `img/${newManaSymbol.split('/').pop()}`; // Ersetzt den Pfad des Favicon
+
+        // Aktualisiere das Favicon
+        faviconElement.href = newFavicon;
+
 
         // Füge eine CSS-Klasse hinzu, um den Übergang zu aktivieren
         manaSymbolElement.classList.add("fade-out");
@@ -98,41 +105,66 @@ document.getElementById('sheo').addEventListener('mouseenter', function () {
 });
 
         // KonamiCode Easteregg
-        const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-        let konamiCodePosition = 0;
-    
-        document.addEventListener('keydown', function (event) {
-            if (event.key === konamiCode[konamiCodePosition]) {
-                konamiCodePosition++;
-                if (konamiCodePosition === konamiCode.length) {
-                    activateEasterEgg();
-                    konamiCodePosition = 0;
-                }
-            } else {
+    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let konamiCodePosition = 0;
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === konamiCode[konamiCodePosition]) {
+            konamiCodePosition++;
+            if (konamiCodePosition === konamiCode.length) {
+                activateEasterEgg();
                 konamiCodePosition = 0;
             }
-        });
-    
-        function activateEasterEgg() {
-            easterEggActivated = true;
-    
-            // Benutzerdefinierte Benachrichtigung
-            const notification = document.createElement('div');
-            notification.innerText = 'Easter Egg aktiviert! 🎉';
-            notification.className = 'easter-egg-notification';
-            document.body.appendChild(notification);
-            console.log('Easter Egg Benachrichtigung hinzugefügt');
-    
-            // Audio-Element abspielen
-            const fanfareAudio = new Audio('fanfare.mp3');
-            fanfareAudio.play();
-            console.log('Fanfare abgespielt');
-    
-            // Timeout, um die Benachrichtigung nach einigen Sekunden zu entfernen (kann angepasst werden)
-            setTimeout(function () {
-                document.body.removeChild(notification);
-            }, 5000);
-    
-            // Füge hier weitere Aktionen für dein Easter Egg hinzu
+        } else {
+            konamiCodePosition = 0;
         }
     });
+
+    function activateEasterEgg() {
+        easterEggActivated = true;
+
+        // Benutzerdefinierte Benachrichtigung
+        const notification = document.createElement('div');
+        notification.innerText = 'Easter Egg aktiviert! 🎉';
+        notification.className = 'easter-egg-notification';
+        document.body.appendChild(notification);
+        console.log('Easter Egg Benachrichtigung hinzugefügt');
+
+        // Audio-Element abspielen
+        const fanfareAudio = new Audio('fanfare.mp3');
+        fanfareAudio.play();
+        console.log('Fanfare abgespielt');
+
+        // Rainbow Foil-Effekt aktivieren
+        activateRainbowFoilEffect();
+
+        // Timeout, um die Benachrichtigung nach einigen Sekunden zu entfernen (kann angepasst werden)
+        setTimeout(function () {
+            document.body.removeChild(notification);
+        }, 5000);
+
+        // Füge hier weitere Aktionen für dein Easter Egg hinzu
+    }
+
+    function activateRainbowFoilEffect() {
+        // Füge die CSS-Regel für die rainbowFoil-Animation hinzu
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes rainbowFoil {
+                0% {
+                    filter: hue-rotate(0deg);
+                }
+                100% {
+                    filter: hue-rotate(360deg);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Füge die rainbowFoil-Klasse zu den entsprechenden Elementen hinzu
+        const foilElements = document.querySelectorAll('.foil-effect');
+        foilElements.forEach(element => {
+            element.classList.add('rainbowFoil');
+        });
+    }
+});

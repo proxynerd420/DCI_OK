@@ -115,7 +115,6 @@ h2 {
     border-top: 2px solid goldenrod;
     border-left: 2px solid goldenrod;
     border-right: 2px solid goldenrod;
-
 }
 
 .ul {
@@ -275,8 +274,6 @@ h4 {
     width: 3vw;
 }
 
-
-
 .kreaturen>div>img.foil-effect {
     width: 12vw;
     margin: 0 10px;
@@ -289,15 +286,6 @@ h4 {
 .kreaturen>div>img.foil-effect:hover {
     transform: scale(1.35);
     animation: rainbowFoil 2s infinite alternate;
-}
-
-@keyframes rainbowFoil {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
 }
 
 .lands>div>img.foil-effect {
@@ -314,15 +302,6 @@ h4 {
     animation: rainbowFoil 2s infinite alternate;
 }
 
-@keyframes rainbowFoil {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
 .Zauber>div>img.foil-effect {
     width: 12vw;
     margin: 0 10px;
@@ -335,15 +314,6 @@ h4 {
 .Zauber>div>img.foil-effect:hover {
     transform: scale(1.35);
     animation: rainbowFoil 2s infinite alternate;
-}
-
-@keyframes rainbowFoil {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
 }
 
 .Artefakte>div>img.foil-effect {
@@ -360,15 +330,6 @@ h4 {
     animation: rainbowFoil 2s infinite alternate;
 }
 
-@keyframes rainbowFoil {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
 .easter-egg-notification {
     position: fixed;
     top: 10px;
@@ -380,32 +341,32 @@ h4 {
     border-radius: 5px;
     font-size: 18px;
     z-index: 10000;
-  }
+}
 
 .fade-out {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
 }
 
-/* ... (deine vorhandenen CSS-Regeln) ... */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 #muteButton {
     align-self: center;
     /* Stile für den Stummschalt-Button */
 }
 
-
 .footer-container {
     display: flex;
     align-items: center;
     gap: 10px; /* Füge Abstand zwischen den Elementen hinzu, falls gewünscht */
-} 
+}
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
@@ -422,5 +383,3 @@ footer img {
 footer h4 {
     color: goldenrod;
 }
-
-  
