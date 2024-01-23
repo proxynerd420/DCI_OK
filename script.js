@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "img/blue mana.png",
             "img/green mana.png",
             "img/white mana.png",
+            "img/red mana.png"
             // Füge hier weitere Pfadangaben zu deinen Mana-Symbolen hinzu
         ];
 
